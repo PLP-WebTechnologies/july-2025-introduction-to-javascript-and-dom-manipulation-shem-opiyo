@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Paradise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Hotel Paradise</h1>
+    <p>Your comfort is our priority 🍽️🏨</p>
+  </header>
+
+  <main>
+    <!-- Part 1: Display area for user input and conditions -->
+    <section id="booking-section">
+      <h2>Check Room Availability</h2>
+      <label for="guests">Enter number of guests:</label>
+      <input type="number" id="guests" min="1" max="10">
+      <button onclick="checkAvailability()">Check</button>
+      <p id="availability-result"></p>
+    </section>
+
+    <!-- Part 2 & 3: Functions + Loops used to display menu -->
+    <section id="menu-section">
+      <h2>Our Menu</h2>
+      <ul id="menu-list"></ul>
+    </section>
+
+    <!-- Part 4: DOM interactions -->
+    <section id="dom-demo">
+      <h2>Interactive DOM Demo</h2>
+      <button id="toggle-menu">Toggle Menu Visibility</button>
+      <button id="add-special">Add Today’s Special</button>
+      <p id="special"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
